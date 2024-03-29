@@ -8,13 +8,17 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
+import Academic from "./pages/Academic";
+import RecruitmentProcedure from "./pages/RecruitmentProcedure";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <div>
-        <Navbar />
+        <div className="pb-16">
+          <Navbar />
+        </div>
         <Outlet />
         <Footer />
       </div>
@@ -25,6 +29,14 @@ const router = createBrowserRouter([
         path: "/",
         element: (<Home />),
       },
+      {
+        path: "/academics",
+        element: (<Academic />),
+      },
+      {
+        path: "/process",
+        element: (<RecruitmentProcedure />),
+      }
     ]
   }
 ]);

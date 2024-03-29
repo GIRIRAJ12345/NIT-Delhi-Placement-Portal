@@ -6,11 +6,11 @@ import footerBg from "../assets/footer-bg.png";
 
 const Footer = () => {
     return (
-        <div className='w-11/12 max-w-7xl mx-auto text-[#012970]'>
-            <div className='relative overflow-hidden max-auto sm:pl-10 pb-5 flex justify-between sm:flex-col tracking-tight'>
+        <div className='w-full max-w-7xl mx-auto text-[#012970] pt-4'>
+            <div className='relative overflow-hidden max-auto pl-10 sm:pl-0 pb-5 flex justify-between flex-col sm:flex-row tracking-tight'>
                 <div className='absolute w-full h-96 -top-10'>
                     <img src={footerBg} alt="footerBg"
-                        className='w-full h-full sm:h-[200%] object-cover' />
+                        className='w-full sm:h-full h-[200%] object-cover' />
                 </div>
 
                 <div className='relative w-40 px-3 pt-5 font-semibold text-black'>
