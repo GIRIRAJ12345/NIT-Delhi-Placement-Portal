@@ -1,41 +1,23 @@
 import React from "react";
-import { Outlet, createBrowserRouter, RouterProvider }
-  from "react-router-dom";
-import { Toaster } from "react-hot-toast";
-import { Provider } from "react-redux";
-import { store } from "./redux/store";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import Error from "./pages/Error";
-
-const router = createBrowserRouter([
-  {
-    
-    path: "/",
-    element: (
-      <div>
-        < Navbar />
-        <Outlet />
-        <Footer />
-      </div>
-    ),
-    errorElement: (<Error />),
-    children: [
-      {
-        path: "/",
-        element: (<Home />),
-      },
-    ]
-  }
-]);
+import Navbar from "./components/Navbar"
+import { Routes ,Route } from "react-router-dom";
+import RecruitmentProcedure from "./pages/RecruitmentProcedure";
+import Academic from "./pages/Academic";
+import Department from "./pages/Department";
 
 function App() {
   return (
-    <Provider store={store}>
-      <Toaster />
-      <RouterProvider router={router} />
-    </Provider>
+    <div>
+       <div className="pb-16">
+          <Navbar/>      
+       </div>
+
+          <Routes>
+            <Route path="/process" element={<RecruitmentProcedure/>}/>
+            <Route path="/academics" element={<Academic/>}/>
+            <Route path="/department" element={<Department/>}/>
+          </Routes>
+    </div>
   );
 }
 
