@@ -19,21 +19,16 @@ export const navbarItems=[
         },
         {
             id:2,
-            title:"Graduating Batch",
-            path:"/batch"
+            title:"Students Achievements",
+            path:"/achievements"
         },
         {
             id:3,
-            title:"Students Achievements",
-            path:"/acheivements"
+            title:"Research",
+            path:"https://nitdelhi.irins.org/"
         },
         {
             id:4,
-            title:"Research",
-            path:"/research"
-        },
-        {
-            id:5,
             title:"Department",
             path:"/department"
         },]

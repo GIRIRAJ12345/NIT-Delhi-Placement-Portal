@@ -1,0 +1,11 @@
+
+.grad
+/* {
+    /* global 94%+ browsers support */
+    /* background: linear-gradient(90deg, rgba(0, 176, 255, 0.6) 1%, rgba(3, 169, 244, 0.06) 50%);  */
+/* }  */ 
+
+{
+    /* global 94%+ browsers support */
+    background: linear-gradient(90deg, rgba(113, 204, 247, 0.95) 1%, rgba(3, 169, 244, 0.06) 50%);
+}

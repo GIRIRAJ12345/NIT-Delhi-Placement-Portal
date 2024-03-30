@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const RecruitmentProcedure = () => {
     return (
-        <div  className='flex flex-col flex-wrap justify-center items-center bg-white'>
+        <div  className='flex flex-col flex-wrap justify-center items-center bg-white '>
             <div className='w-full  text-center bg-blue-950 p-4 '>
                 <h1  className='text-2xl  text-white font-semibold'>Recruiters : Procedure</h1>
             </div>

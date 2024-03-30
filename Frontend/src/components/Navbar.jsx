@@ -7,7 +7,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 const Navbar = () => {
 
     return (
-        <nav className='w-full  fixed flex flex-wrap  justify-between items-center px-8  bg-white border-b shadow-2xl p-2 ' >
+        <nav className='w-full  fixed flex flex-wrap  justify-between items-center px-8  bg-white border-b shadow-2xl p-2 z-20' >
             <div className=' flex items-center' >
                 <NavLink to='https://nitdelhi.ac.in/' className="hover:shadow-md rounded-full hover:shadow-slate-400">
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/NIT-Delhi_Logo.svg/330px-NIT-Delhi_Logo.svg.png" alt="" className='h-10'/>
@@ -19,7 +19,7 @@ const Navbar = () => {
             </div>
 
             <div >
-                <ul className=' flex flex-wrap space-x-12 py-4 pr-9 relative '>
+                <ul className=' flex flex-wrap space-x-6 py-4 pr-9 relative '>
                     {
                         navbarItems.map((item) =>(
                             <div key={item.id} className='group'>
@@ -33,7 +33,7 @@ const Navbar = () => {
                                             }
                                             </NavLink></li>
                                     </div>
-                                    <div className='absolute top-10 w-[30%] hidden group-hover:block hover:block'>
+                                    <div className='absolute top-9 w-[30%] hidden group-hover:block hover:block'>
                                         {
                                             item.submenu &&
 
